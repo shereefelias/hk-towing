@@ -1,0 +1,220 @@
+.contact {
+  background: var(--white);
+  padding: 100px 24px;
+}
+
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact .section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.contact .section-title { color: var(--black); }
+.contact .section-label { color: var(--yellow-dark); }
+.contact .section-sub { color: var(--gray-mid); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--gray);
+  padding: 20px 22px;
+  border-radius: 4px;
+  border-left: 4px solid transparent;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-card:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+
+.contact-card.highlight {
+  background: var(--black);
+  border-left-color: var(--yellow);
+}
+
+.contact-card.highlight .cc-label { color: rgba(255,255,255,0.6); }
+.contact-card.highlight .cc-value { color: var(--white); }
+.contact-card.highlight .cc-hint { color: var(--yellow); }
+.contact-card.highlight .cc-icon { background: var(--yellow); color: var(--black); }
+
+.cc-icon {
+  background: var(--yellow);
+  color: var(--black);
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cc-icon.insta {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+}
+
+.cc-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  margin-bottom: 3px;
+}
+
+.cc-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.4;
+}
+
+.cc-hint {
+  font-size: 0.8rem;
+  color: var(--gray-mid);
+  margin-top: 2px;
+}
+
+.map-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.map-btn {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--black);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.map-btn:hover { background: var(--yellow); color: var(--black); }
+
+/* Instagram card */
+.instagram-card { align-items: center; }
+.insta-content { flex: 1; }
+.qr-code {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+/* Map */
+.contact-map {
+  height: 480px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #e8e8e8;
+  position: relative;
+}
+
+.contact-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 2;
+}
+
+.map-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  color: var(--gray-mid);
+  text-align: center;
+  padding: 24px;
+}
+
+.map-fallback p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.map-links-big {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 260px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--yellow);
+  color: var(--black);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover { background: var(--yellow-dark); }
+
+.btn-secondary-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.btn-secondary-dark:hover { background: #333; }
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .contact-map { height: 320px; }
+  .contact { padding: 72px 24px; }
+}
