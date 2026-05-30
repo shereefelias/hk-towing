@@ -20,7 +20,6 @@
   width: auto;
   object-fit: contain;
   margin-bottom: 12px;
-  filter: brightness(0) invert(1);
 }
 
 .footer-tagline {
@@ -102,5 +101,4 @@
 
 @media (max-width: 768px) {
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
-  .footer-logo { filter: none; }
 }

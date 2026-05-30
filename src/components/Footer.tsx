@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="HK Towing" className="footer-logo" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}images/logo_black_background.png`} alt="HK Towing" className="footer-logo" loading="lazy" />
             <p className="footer-tagline">Fast. Professional. Reliable.</p>
           </div>
 
