@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
-        <img src="/images/truck.jpg" alt="HK Towing truck" className="hero-truck" fetchPriority="high" />
+        <img src={`${import.meta.env.BASE_URL}images/truck.jpg`} alt="HK Towing truck" className="hero-truck" fetchPriority="high" />
         <div className="hero-overlay" />
       </div>
 

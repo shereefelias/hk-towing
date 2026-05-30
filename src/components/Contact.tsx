@@ -67,7 +67,7 @@ export default function Contact() {
                 <div className="cc-label">Follow Us on Instagram</div>
                 <div className="cc-hint">Scan the QR code or tap here</div>
               </div>
-              <img src="/images/instagram_qr.png" alt="Instagram QR Code" className="qr-code" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}images/instagram_qr.png`} alt="Instagram QR Code" className="qr-code" loading="lazy" />
             </a>
           </div>
 
