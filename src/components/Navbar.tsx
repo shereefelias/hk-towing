@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-inner">
         <a href="#home" className="nav-logo">
-          <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="HK Towing" />
+          <img src={`${import.meta.env.BASE_URL}images/logo_black_background.png`} alt="HK Towing" />
         </a>
         <ul className={`nav-links ${open ? 'open' : ''}`}>
           {links.map(l => (
