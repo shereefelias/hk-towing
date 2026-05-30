@@ -43,7 +43,7 @@ export default function About() {
 
         <div className="about-visual">
           <div className="about-img-wrap">
-            <img src="/images/truck.jpg" alt="HK Towing truck" className="about-truck" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}images/truck.jpg`} alt="HK Towing truck" className="about-truck" loading="lazy" />
             <div className="about-badge">
               <span className="badge-num">24/7</span>
               <span className="badge-label">Always Available</span>
