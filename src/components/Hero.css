@@ -54,10 +54,19 @@
 
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(5rem, 12vw, 9rem);
+  font-size: clamp(5rem, 11vw, 8rem);
   line-height: 0.9;
   color: var(--white);
   letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
+.hero-keywords {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
   margin-bottom: 16px;
 }
 

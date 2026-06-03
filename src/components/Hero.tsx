@@ -16,8 +16,8 @@ export default function Hero() {
         </h1>
         <p className="hero-tagline">Fast. Professional. Reliable.</p>
         <p className="hero-sub">
-          Available 24/7 — We get to you fast, handle your vehicle with care,<br />
-          and get you back on the road.
+          Serving Greenville, SC and surrounding areas — we get to you fast,<br />
+          handle your vehicle with care, and get you back on the road.
         </p>
         <div className="hero-actions">
           <a href="tel:+18646860012" className="btn-primary">

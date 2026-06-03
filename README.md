@@ -1,70 +1,82 @@
-# HK Towing Website
+# HK Towing
 
-**hk-towing.com** — React + TypeScript + Vite  
-Hosted free on GitHub Pages with your custom domain.
+**Greenville, SC**
 
----
+*Fast. Professional. Reliable.*
 
-## 📁 Step 1 — Add Your Images
+Available 24/7 — We get to you fast, handle your vehicle with care, and get you back on the road.
 
-Copy these files into the `public/images/` folder:
-
-| File name | What it is |
-|---|---|
-| `logo.png` | HK Towing logo |
-| `truck.jpg` | Truck photo (convert HEIC → JPG first) |
-| `instagram_qr.png` | Instagram QR code |
-
-**Convert HEIC → JPG on Mac:**
-1. Open **Preview** app → open `truck_photo.HEIC`
-2. File → Export → choose **JPEG** → save as `truck.jpg`
-3. Place it in `public/images/`
+**hk-towing.com**
 
 ---
 
-## 🚀 Step 2 — Deploy to GitHub Pages
+## Site Structure
 
-**Create a GitHub repo:**
-1. Go to github.com → New repository → name it `hk-towing` → Public
-
-**Push the code (run in Terminal from this folder):**
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/hk-towing.git
-git push -u origin main
 ```
+┌─────────────────────────────────────┐
+│              NAVBAR                 │
+│  Logo    Nav Links    (864)686-0012 │
+└─────────────────────────────────────┘
 
-**Enable GitHub Pages:**
-1. Repo → Settings → Pages
-2. Source: **GitHub Actions**
-3. Site auto-deploys on every push to main ✅
+┌─────────────────────────────────────┐
+│               HERO                  │
+│         HK TOWING                   │
+│   Fast. Professional. Reliable.     │
+│   [Call Now]      [Our Services]    │
+└─────────────────────────────────────┘
 
----
+┌─────────────────────────────────────┐
+│            OUR SERVICES             │
+│  Emergency  │  Roadside  │  Long    │
+│  Towing     │  Assist.   │  Distance│
+│─────────────────────────────────────│
+│  Flatbed    │ Motorcycle │  Light   │
+│  Towing     │  Towing    │  Duty    │
+└─────────────────────────────────────┘
 
-## 🌐 Step 3 — Connect hk-towing.com
+┌─────────────────────────────────────┐
+│          WHY CHOOSE US              │
+│  ✓ 24/7 Service  ✓ Fast Response   │
+│  ✓ Licensed      ✓ Locally Owned   │
+│  ✓ Pro Equipment ✓ Fair Pricing    │
+└─────────────────────────────────────┘
 
-1. GitHub → Settings → Pages → Custom domain → enter `hk-towing.com`
-2. In Google Domains DNS, add these records:
+┌─────────────────────────────────────┐
+│           ABOUT US                  │
+│  Company story      │  Truck photo  │
+│  & values           │  (real photo) │
+└─────────────────────────────────────┘
 
-| Type | Name | Value |
-|---|---|---|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | YOUR_USERNAME.github.io |
+┌─────────────────────────────────────┐
+│           SERVICE AREAS             │
+│  Greenville · Greer · Simpsonville  │
+│  Mauldin · Travelers Rest · Taylors │
+│  Fountain Inn · Easley · and more   │
+└─────────────────────────────────────┘
 
-3. Wait ~30 mins → check "Enforce HTTPS" in GitHub Pages ✅
+┌─────────────────────────────────────┐
+│                FAQ                  │
+│  ▸ Do you provide 24-hour towing?   │
+│  ▸ How much does a tow cost?        │
+│  ▸ How quickly can you arrive?      │
+│  ▸ What areas do you serve?         │
+└─────────────────────────────────────┘
 
----
+┌─────────────────────────────────────┐
+│             CONTACT                 │
+│  📞 (864) 686-0012                  │
+│  📍 1321 White Horse Rd, Greenville │
+│  🗺  Google Maps  │  Apple Maps     │
+│  Hours: 24/7                        │
+└─────────────────────────────────────┘
 
-## 💻 Local Development
+┌─────────────────────────────────────┐
+│              FOOTER                 │
+│  Logo  │  Quick Links  │  Contact   │
+│     © 2026 HK Towing               │
+└─────────────────────────────────────┘
 
-```bash
-npm install
-npm run dev
-# Open http://localhost:5173
+┌─────────────────────────────────────┐
+│   📞 CALL NOW — (864) 686-0012      │  ← Mobile only (sticky bottom bar)
+└─────────────────────────────────────┘
 ```

@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={`${import.meta.env.BASE_URL}images/logo_black_background.png`} alt="HK Towing" className="footer-logo" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="HK Towing" className="footer-logo" loading="lazy" />
             <p className="footer-tagline">Fast. Professional. Reliable.</p>
           </div>
 
@@ -16,7 +16,10 @@ export default function Footer() {
             <ul>
               <li><a href="#home">Home</a></li>
               <li><a href="#services">Services</a></li>
+              <li><a href="#why-choose-us">Why Choose Us</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#service-areas">Service Areas</a></li>
+              <li><a href="#faq">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>

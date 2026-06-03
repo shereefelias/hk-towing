@@ -43,11 +43,14 @@ export default function About() {
 
         <div className="about-visual">
           <div className="about-img-wrap">
-            <img src={`${import.meta.env.BASE_URL}images/truck.jpg`} alt="HK Towing truck" className="about-truck" loading="lazy" />
+            <img src={`${import.meta.env.BASE_URL}images/img_8868.jpg`} alt="HK Towing flatbed truck" className="about-truck" loading="lazy" />
             <div className="about-badge">
               <span className="badge-num">24/7</span>
               <span className="badge-label">Always Available</span>
             </div>
+          </div>
+          <div className="about-img-secondary">
+            <img src={`${import.meta.env.BASE_URL}images/img_8870.jpg`} alt="HK Towing truck ready for service" loading="lazy" />
           </div>
         </div>
       </div>
