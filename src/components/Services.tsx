@@ -10,7 +10,7 @@ const services = [
   {
     icon: <Wrench size={32} />,
     title: 'Roadside Assistance',
-    desc: 'Dead battery, flat tire, locked out, or out of fuel — we handle the everyday breakdowns so you don\'t have to stress.',
+    desc: 'Dead battery or locked out? We handle the everyday breakdowns so you don\'t have to stress.',
   },
   {
     icon: <MapPin size={32} />,

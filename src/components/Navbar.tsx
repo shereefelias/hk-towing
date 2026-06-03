@@ -4,18 +4,26 @@ import './Navbar.css';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const links = ['Home', 'Services', 'About', 'Contact'];
+  const links = [
+    { label: 'Home', href: '#home' },
+    { label: 'Services', href: '#services' },
+    { label: 'Why Choose Us', href: '#why-choose-us' },
+    { label: 'About', href: '#about' },
+    { label: 'Service Areas', href: '#service-areas' },
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Contact', href: '#contact' },
+  ];
 
   return (
     <nav className="navbar">
       <div className="nav-inner">
         <a href="#home" className="nav-logo">
-          <img src={`${import.meta.env.BASE_URL}images/logo_black_background.png`} alt="HK Towing" />
+          <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="HK Towing" />
         </a>
         <ul className={`nav-links ${open ? 'open' : ''}`}>
           {links.map(l => (
-            <li key={l}>
-              <a href={`#${l.toLowerCase()}`} onClick={() => setOpen(false)}>{l}</a>
+            <li key={l.label}>
+              <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
             </li>
           ))}
         </ul>
