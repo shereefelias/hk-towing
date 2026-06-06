@@ -20,11 +20,11 @@ export default function Hero() {
           handle your vehicle with care, and get you back on the road.
         </p>
         <div className="hero-actions">
-          <a href="tel:+18646860012" className="btn-primary">
+          <a href="tel:+18646860012" className="btn-primary" data-umami-event="call-click" data-umami-event-location="hero">
             <Phone size={18} />
             Call Now — (864) 686-0012
           </a>
-          <a href="#services" className="btn-secondary">Our Services</a>
+          <a href="#services" className="btn-secondary" data-umami-event="services-click" data-umami-event-location="hero">Our Services</a>
         </div>
       </div>
 

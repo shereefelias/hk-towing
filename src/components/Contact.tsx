@@ -23,7 +23,7 @@ export default function Contact() {
         <div className="contact-grid">
           {/* Info cards */}
           <div className="contact-cards">
-            <a href={`tel:${PHONE}`} className="contact-card highlight">
+            <a href={`tel:${PHONE}`} className="contact-card highlight" data-umami-event="call-click" data-umami-event-location="contact">
               <div className="cc-icon"><Phone size={24} /></div>
               <div>
                 <div className="cc-label">Call Us Anytime</div>
@@ -32,7 +32,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <a href={`mailto:${EMAIL}`} className="contact-card">
+            <a href={`mailto:${EMAIL}`} className="contact-card" data-umami-event="email-click" data-umami-event-location="contact">
               <div className="cc-icon"><Mail size={24} /></div>
               <div>
                 <div className="cc-label">Email</div>
@@ -46,8 +46,8 @@ export default function Contact() {
                 <div className="cc-label">Location</div>
                 <div className="cc-value">{ADDRESS}</div>
                 <div className="map-links">
-                  <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="map-btn">Google Maps</a>
-                  <a href={APPLE_MAPS} target="_blank" rel="noopener noreferrer" className="map-btn">Apple Maps</a>
+                  <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="map-btn" data-umami-event="maps-click" data-umami-event-type="google">Google Maps</a>
+                  <a href={APPLE_MAPS} target="_blank" rel="noopener noreferrer" className="map-btn" data-umami-event="maps-click" data-umami-event-type="apple">Apple Maps</a>
                 </div>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <a href="https://www.instagram.com/hktowingrecovering/" target="_blank" rel="noopener noreferrer" className="contact-card instagram-card">
+            <a href="https://www.instagram.com/hktowingrecovering/" target="_blank" rel="noopener noreferrer" className="contact-card instagram-card" data-umami-event="instagram-click" data-umami-event-location="contact">
               <div className="cc-icon insta"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></div>
               <div className="insta-content">
                 <div className="cc-label">Follow Us on Instagram</div>
@@ -87,8 +87,8 @@ export default function Contact() {
               <MapPin size={32} />
               <p>1321 White Horse Road<br />Greenville, SC</p>
               <div className="map-links-big">
-                <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary">Open in Google Maps</a>
-                <a href={APPLE_MAPS} target="_blank" rel="noopener noreferrer" className="btn-secondary-dark">Open in Apple Maps</a>
+                <a href={MAPS_LINK} target="_blank" rel="noopener noreferrer" className="btn-primary" data-umami-event="maps-click" data-umami-event-type="google">Open in Google Maps</a>
+                <a href={APPLE_MAPS} target="_blank" rel="noopener noreferrer" className="btn-secondary-dark" data-umami-event="maps-click" data-umami-event-type="apple">Open in Apple Maps</a>
               </div>
             </div>
           </div>

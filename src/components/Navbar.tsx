@@ -27,7 +27,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a href="tel:+18646860012" className="nav-cta">
+        <a href="tel:+18646860012" className="nav-cta" data-umami-event="call-click" data-umami-event-location="navbar">
           <Phone size={16} />
           <span>(864) 686-0012</span>
         </a>
