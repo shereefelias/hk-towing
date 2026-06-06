@@ -28,7 +28,7 @@ export default function ServiceAreas() {
 
         <div className="areas-grid">
           {LINKED_AREAS.map(city => (
-            <a href={`/${city.slug}/`} className="area-chip area-chip-link" key={city.name}>
+            <a href={`/${city.slug}/`} className="area-chip area-chip-link" key={city.name} data-umami-event="city-click" data-umami-event-city={city.name}>
               <MapPin size={14} />
               <span>{city.name}, SC</span>
             </a>
@@ -43,7 +43,7 @@ export default function ServiceAreas() {
 
         <p className="areas-note">
           Don't see your city? Call us — if we can get there, we will.{' '}
-          <a href="tel:+18646860012">(864) 686-0012</a>
+          <a href="tel:+18646860012" data-umami-event="call-click" data-umami-event-location="service-areas">(864) 686-0012</a>
         </p>
       </div>
     </section>
