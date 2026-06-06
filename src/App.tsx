@@ -8,9 +8,11 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import StickyCallBar from './components/StickyCallBar';
+import { useScrollDepth } from './hooks/useScrollDepth';
 import './index.css';
 
 export default function App() {
+  useScrollDepth();
   return (
     <>
       <Navbar />

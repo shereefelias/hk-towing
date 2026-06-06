@@ -44,7 +44,7 @@ export default function FAQ() {
         <div className="faq-list">
           {FAQS.map((item, i) => (
             <div className={`faq-item ${open === i ? 'open' : ''}`} key={i}>
-              <button className="faq-question" onClick={() => setOpen(open === i ? null : i)}>
+              <button className="faq-question" onClick={() => setOpen(open === i ? null : i)} data-umami-event="faq-open" data-umami-event-question={item.q}>
                 <span>{item.q}</span>
                 <ChevronDown size={20} className="faq-chevron" />
               </button>
