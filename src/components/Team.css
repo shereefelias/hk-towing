@@ -1,0 +1,146 @@
+.team {
+  background: var(--black);
+  padding: 100px 24px;
+}
+
+.team-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team .section-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.team .section-label {
+  color: var(--yellow);
+}
+
+.section-title.dark-on-dark {
+  color: var(--white);
+}
+
+.team-intro {
+  max-width: 580px;
+  margin: 16px auto 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Grid ── */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* ── Card ── */
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 40px 28px 36px;
+  transition: border-color 0.2s;
+}
+
+.team-card:hover {
+  border-color: rgba(245, 196, 0, 0.35);
+}
+
+/* ── Photo ── */
+.team-photo-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--yellow);
+  flex-shrink: 0;
+  margin-bottom: 24px;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.team-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 196, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-photo-placeholder span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: rgba(245, 196, 0, 0.4);
+  line-height: 1;
+}
+
+/* ── Text ── */
+.team-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-role {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 6px;
+}
+
+.team-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ── Mobile ── */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .team {
+    padding: 72px 24px;
+  }
+
+  .team .section-header {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    padding: 32px 20px 28px;
+  }
+}
