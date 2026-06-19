@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import About from './components/About';
-import Team from './components/Team';
+// import Team from './components/Team';
 import ServiceAreas from './components/ServiceAreas';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
