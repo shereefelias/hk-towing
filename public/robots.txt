@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hk-towing.com/sitemap.xml

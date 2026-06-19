@@ -1,0 +1,120 @@
+.holiday-banner {
+  position: fixed;
+  top: 130px; /* navbar height */
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: var(--yellow);
+  color: var(--black);
+  border-bottom: 2px solid var(--yellow-dark);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.holiday-banner--out {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.holiday-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.holiday-emoji {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.holiday-text {
+  flex: 1;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.holiday-subtext {
+  font-weight: 500;
+  opacity: 0.72;
+}
+
+.holiday-dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.14);
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  min-height: 34px;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+
+.holiday-dismiss:hover {
+  background: rgba(0, 0, 0, 0.24);
+}
+
+.holiday-dismiss-label {
+  display: none;
+}
+
+/* Spacer pushes page content below the fixed banner */
+.holiday-spacer {
+  height: 52px;
+}
+
+/* ── Mobile ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .holiday-banner-inner {
+    padding: 0 16px;
+    height: 60px;
+    gap: 10px;
+  }
+
+  .holiday-text {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  /* Hide subtext on mobile — just show the main message + emoji */
+  .holiday-subtext {
+    display: none;
+  }
+
+  /* Large, clearly labeled dismiss button — easy thumb target */
+  .holiday-dismiss {
+    min-height: 60px; /* fills full banner height */
+    min-width: 80px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.18);
+  }
+
+  .holiday-dismiss-label {
+    display: inline;
+  }
+
+  .holiday-spacer {
+    height: 60px;
+  }
+}
