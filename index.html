@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://*.googleadservices.com https://*.doubleclick.net https://insights.westfieldnexus.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://*.doubleclick.net https://*.googletagmanager.com; connect-src 'self' https://*.google.com https://*.googleadservices.com https://*.google-analytics.com https://*.doubleclick.net https://*.googletagmanager.com https://insights.westfieldnexus.com wss://insights.westfieldnexus.com; frame-src https://www.google.com; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18287345437"></script>
     <script>
@@ -10,8 +15,6 @@
 
       gtag('config', 'AW-18287345437');
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="google-site-verification" content="KtzqURbEnVUkEfTfVEAQfzPV7MwHiPkO28GhS8FvhBM" />
     <link rel="icon" type="image/png" href="/images/logo.png" />
@@ -21,7 +24,14 @@
     <meta name="description" content="HK Towing — Fast, Professional, and Reliable towing services in Greenville, SC. Available 24/7 for emergency towing, roadside assistance, flatbed towing, and more." />
     <meta name="keywords" content="towing, tow truck, Greenville SC, emergency towing, roadside assistance, flatbed towing, HK Towing" />
     <link rel="canonical" href="https://hk-towing.com/" />
-    <link rel="preload" as="image" href="/images/truck.jpg" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/truck.webp"
+      type="image/webp"
+      imagesrcset="/images/truck-768.webp 768w, /images/truck-1280.webp 1280w, /images/truck.webp 1920w"
+      imagesizes="100vw"
+    />
     <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <meta property="og:type" content="website" />

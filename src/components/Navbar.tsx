@@ -20,7 +20,7 @@ export default function Navbar() {
         <a href="#home" className="nav-logo">
           <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="HK Towing" />
         </a>
-        <ul className={`nav-links ${open ? 'open' : ''}`}>
+        <ul id="primary-navigation" className={`nav-links ${open ? 'open' : ''}`}>
           {links.map(l => (
             <li key={l.label}>
               <a href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
@@ -31,7 +31,13 @@ export default function Navbar() {
           <Phone size={16} />
           <span>(864) 686-0012</span>
         </a>
-        <button className="nav-burger" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button
+          className="nav-burger"
+          onClick={() => setOpen(!open)}
+          aria-label={open ? 'Close Menu' : 'Open Menu'}
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+        >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
