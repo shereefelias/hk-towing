@@ -17,16 +17,19 @@ export default function App() {
   useScrollDepth();
   return (
     <>
+      <a className="skip-link" href="#main-content">Skip to Main Content</a>
       <Navbar />
       <HolidayBanner />
-      <Hero />
-      <Services />
-      <WhyChooseUs />
-      <About />
-      {/* <Team /> */}
-      <ServiceAreas />
-      <FAQ />
-      <Contact />
+      <main id="main-content" tabIndex={-1}>
+        <Hero />
+        <Services />
+        <WhyChooseUs />
+        <About />
+        {/* <Team /> */}
+        <ServiceAreas />
+        <FAQ />
+        <Contact />
+      </main>
       <Footer />
       <StickyCallBar />
     </>

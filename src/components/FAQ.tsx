@@ -44,11 +44,25 @@ export default function FAQ() {
         <div className="faq-list">
           {FAQS.map((item, i) => (
             <div className={`faq-item ${open === i ? 'open' : ''}`} key={i}>
-              <button className="faq-question" onClick={() => setOpen(open === i ? null : i)} data-umami-event="faq-open" data-umami-event-question={item.q}>
+              <button
+                id={`faq-question-${i}`}
+                className="faq-question"
+                onClick={() => setOpen(open === i ? null : i)}
+                aria-expanded={open === i}
+                aria-controls={`faq-answer-${i}`}
+                data-umami-event="faq-open"
+                data-umami-event-question={item.q}
+              >
                 <span>{item.q}</span>
-                <ChevronDown size={20} className="faq-chevron" />
+                <ChevronDown size={20} className="faq-chevron" aria-hidden="true" />
               </button>
-              <div className="faq-answer">
+              <div
+                id={`faq-answer-${i}`}
+                className="faq-answer"
+                role="region"
+                aria-labelledby={`faq-question-${i}`}
+                aria-hidden={open !== i}
+              >
                 <p>{item.a}</p>
               </div>
             </div>

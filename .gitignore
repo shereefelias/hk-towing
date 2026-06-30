@@ -2,3 +2,10 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Local Codex project-skill bridge and untracked frontend skills
+.agents/
+.claude/skills/javascript/
+.claude/skills/react/
+.claude/skills/typescript-advanced-types/
+.claude/skills/web-design-guidelines/

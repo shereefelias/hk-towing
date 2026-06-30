@@ -5,7 +5,16 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="hero-bg">
-        <img src={`${import.meta.env.BASE_URL}images/truck.jpg`} alt="HK Towing truck" className="hero-truck" fetchPriority="high" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/truck.webp`}
+          srcSet={`${import.meta.env.BASE_URL}images/truck-768.webp 768w, ${import.meta.env.BASE_URL}images/truck-1280.webp 1280w, ${import.meta.env.BASE_URL}images/truck.webp 1920w`}
+          sizes="100vw"
+          width={1920}
+          height={1080}
+          alt="HK Towing flatbed truck in Greenville, South Carolina"
+          className="hero-truck"
+          fetchPriority="high"
+        />
         <div className="hero-overlay" />
       </div>
 

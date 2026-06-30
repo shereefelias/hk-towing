@@ -4,7 +4,7 @@ const members = [
   {
     name: 'Hani',
     role: 'Owner & Operator',
-    photo: 'hani.jpg',
+    photo: 'hani.webp',
     alt: 'Hani, owner of HK Towing',
     bio: 'Hani founded HK Towing with one goal in mind: deliver the kind of service he\'d want if he were the one stranded on the side of the road. With years of hands-on experience in towing and roadside assistance, he built the company from the ground up on a foundation of fast response, professional standards, and genuine care for every customer — no matter the hour.',
   },
@@ -46,7 +46,10 @@ export default function Team() {
                     src={`${import.meta.env.BASE_URL}images/${m.photo}`}
                     alt={m.alt!}
                     className="team-photo"
+                    width={960}
+                    height={729}
                     loading="lazy"
+                    decoding="async"
                   />
                 ) : (
                   <div className="team-photo-placeholder" aria-hidden="true">
