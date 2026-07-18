@@ -8,42 +8,6 @@
   margin: 0 auto;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.section-label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--yellow);
-  display: block;
-  margin-bottom: 12px;
-}
-
-.section-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  color: var(--white);
-  letter-spacing: 0.03em;
-  margin-bottom: 16px;
-}
-
-.section-title.dark { color: var(--black); }
-
-.section-sub {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(255,255,255,0.6);
-  max-width: 560px;
-  margin: 0 auto;
-}
-
-.section-sub.dark { color: var(--gray-mid); }
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

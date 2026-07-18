@@ -8,15 +8,6 @@
   margin: 0 auto;
 }
 
-.team .section-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
-.team .section-label {
-  color: var(--yellow);
-}
-
 .section-title.dark-on-dark {
   color: var(--white);
 }
