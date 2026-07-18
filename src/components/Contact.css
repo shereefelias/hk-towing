@@ -8,11 +8,6 @@
   margin: 0 auto;
 }
 
-.contact .section-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
-
 .contact .section-title { color: var(--black); }
 .contact .section-label { color: var(--yellow-dark); }
 .contact .section-sub { color: var(--gray-mid); }
